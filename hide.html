@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple jquery example</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("p").hide();
+        $("#test").hide();
+        $(".test").toggle();
+        });
+});
+</script>
+</head>
+<body>
+<h1>Selector used element, .class, #id</h1>
+<h2  class ="test">This is heading</h2>
+
+<p>This is paragraph.</p>
+<p>This is another paragraph.</p>
+<p id="test">This is another paragraph 2</p>
+<button>CLick me to hide paragraphs</button>
+
+</body>
+</html>
